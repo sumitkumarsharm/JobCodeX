@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { MapPin, Clock, Briefcase } from "lucide-react";
+import JobApplicationForm from "./JobApplicationForm ";
 
 export default function JobDetail({ jobs }) {
   const { id } = useParams();
@@ -91,7 +92,7 @@ export default function JobDetail({ jobs }) {
         </div>
 
         {/* RIGHT SIDE - Apply Form */}
-       
+       <JobApplicationForm job={job}/>
       </div>
     </div>
   );
